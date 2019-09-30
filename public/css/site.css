@@ -1,0 +1,346 @@
+.centered-a {
+    font-size: 30px;
+}
+
+body {
+    font-family: "Dosis", sans-serif;
+}
+
+.class {
+    background: none !important;
+    border: none;
+}
+
+.body-content {
+    padding-top: 95px;
+    font-size: 20px;
+}
+
+.navbar-logo {
+    font-family: 'warnes';
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.landing {
+    width: 100%;
+    height: 100vh;
+}
+
+/*.project-slide .hidden-image {
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+}
+
+.project-slide:hover .hidden-image {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+
+}*/
+
+/*below is for background */
+
+.outer-visible .visible {
+    background: rgba(0, 0, 0, 0.8) !important;
+    background-color: #000;
+    z-index: 2;
+}
+
+.outer-visible {
+    background: none;
+    z-index: 1;
+    width: 100vw;
+}
+
+.background {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background: white;
+    overflow: cv;
+    background-size: cover;
+    background-position: center center;
+    z-index: -3;
+}
+
+nav {
+    background: none;
+}
+
+canvas {
+    z-index: -2;
+}
+
+
+/********Code below for "Contact Us" **************/
+
+.contact {
+    background: transparent;
+    color: #fff;
+    margin: 0 1em;
+    max-width: calc(100% - 7em);
+    padding: 2em calc(50% - 16em);
+}
+
+.contact-header {
+    color: black;
+}
+
+h2 {
+    margin: 0 0 0.25em;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+form {
+    position: relative;
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+textarea {
+    background: transparent;
+    border: 0;
+    box-sizing: border-box;
+    color: darkred;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    width: 100%;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+}
+
+label {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+label::before,
+label::after {
+    border-width: 2px;
+    border-style: solid;
+    content: ' ';
+    pointer-events: none;
+    position: absolute;
+    transition: 0.75s;
+    width: 5%;
+    height: 2.25em;
+    z-index: 1;
+}
+
+label::before {
+    border-right: 0;
+}
+
+label::after {
+    border-left: 0;
+    right: 0;
+}
+
+.label-text {
+    background: transparent;
+    display: block;
+    padding: 0.5em 1em;
+    position: absolute;
+    right: 0;
+    transition: 0.5s;
+}
+
+.label-text::after {
+    border-top: 1px solid;
+    content: ' ';
+    display: block;
+    transition: 0.5s;
+}
+
+input:focus + label::before,
+input:focus + label::after,
+textarea:focus + label::before,
+textarea:focus + label::after {
+    width: 50%;
+}
+
+input:focus + label .label-text,
+textarea:focus + label .label-text {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+input:focus + label .label-text::after,
+textarea:focus + label .label-text::after {
+    -webkit-transform: translate3d(-100%, -0.75em, 0);
+    transform: translate3d(-100%, -0.75em, 0);
+    width: 1em;
+}
+
+#n {
+    color: darkred;
+}
+
+#e {
+    color: darkred;
+}
+
+#n:focus + label::before,
+#n:focus + label::after {
+    border-color: darkred;
+}
+
+#e:focus + label::before,
+#e:focus + label::after {
+    border-color: darkred;
+}
+
+.name {
+    color: darkred;
+    top: 0.5em;
+}
+
+.name::before,
+.name::after {
+    border-color: darkred;
+    top: 0;
+}
+
+.email {
+    color: darkred;
+    top: 3.85em;
+}
+
+.email::before,
+.email::after {
+    border-color: darkred;
+    top: 0;
+}
+
+#m {
+    height: 8em;
+}
+
+.message {
+    color: darkred;
+    top: 7.25em;
+}
+
+.message::before,
+.message::after {
+    height: 8em;
+}
+
+.button {
+    color: darkred;
+    border: 1px solid;
+    position: relative;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: darkred;
+    color: white;
+}
+
+@media (min-width: 660px) and (max-width: 856px) {
+    body {
+        font-family: "Dosis", sans-serif;
+        max-width: calc(100% - 12em);
+    }
+}
+
+/*snackbar*/
+
+#snackbar {
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    min-width: 250px;
+    /* Set a default minimum width */
+    /*    margin-left: -125px;*/
+    /* Divide value of min-width by 2 */
+    background-color: #333;
+    /* Black background color */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Centered text */
+    border-radius: 2px;
+    /* Rounded borders */
+    padding: 16px;
+    /* Padding */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 1;
+    /* Add a z-index if needed */
+    /*    left: 50%;*/
+    /* Center the snackbar */
+    bottom: 30px;
+    /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+
+.show {
+    visibility: visible !important;
+    /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+.team > .container {
+    background: rgba(0, 0, 0, 0);
+}

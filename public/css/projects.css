@@ -1,0 +1,496 @@
+a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Unit ----------------------*/
+
+.hero-unit {
+    background: rgba(0, 0, 0, 0);
+    font-family: "Dosis", sans-serif;
+    letter-spacing: 5px;
+    font-size: 40;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.project-title {
+    font-family: "Dosis", sans-serif;
+    letter-spacing: 5px;
+    font-size: 40;
+}
+
+.project-icon {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.hero-unit h1,
+.hero-unit h2,
+.hero-unit h3,
+.hero-unit h4,
+.hero-unit h5,
+.hero-unit h6 {
+    margin-top: -0.5rem;
+    margin-bottom: 0;
+    color: white;
+}
+
+.hero-unit h1 {
+    font-weight: bold;
+}
+
+.hero-unit hgroup {
+    margin: 3rem 0;
+}
+
+.hero-unit .card-icon {
+    /* front of card */
+    display: block;
+    margin: 0.5rem auto 0;
+    font-size: 2rem;
+    color: white;
+}
+
+.hero-unit .clients {
+    margin: 2rem auto;
+}
+
+.hero-unit .clients a {
+    color: white;
+}
+
+.clients .fa-stack-2x {
+    color: gray;
+}
+
+.clients:hover .fa-stack-2x {
+    color: #333333;
+}
+
+/* Card design - front */
+
+.button.large {
+    margin: 0;
+    padding: 3.25rem;
+}
+
+.button.large a {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 100;
+    margin-top: 2rem;
+}
+
+/* Card design - back */
+
+.panel i {
+    font-size: 2rem;
+    display: block;
+    float: left;
+    width: 20%;
+    opacity: 0.5;
+}
+
+.panel a,
+.panel p,
+.panel small {
+    width: 80%;
+    float: right;
+}
+
+.panel a {
+    margin-bottom: 0.5rem;
+}
+
+.panel a:hover {
+    text-decoration: underline;
+}
+
+.panel small {
+    margin-top: -0.5rem;
+    font-style: italic;
+}
+
+/* Buttons Card Flipper 
+ * Source: https://cssdeck.com/labs/rxcleo5w
+ */
+
+.flip-cards {
+    float: left;
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    border-color: white;
+}
+
+.flip-cards li {
+    float: left;
+    width: 33.3%;
+    height: 180px;
+    position: relative;
+    padding: 0;
+}
+
+.flip-cards li:hover {
+    cursor: pointer;
+}
+
+.flip-cards li:hover .card-front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform: perspective(1000) rotateY(180deg);
+    -moz-transform: perspective(1000) rotateY(180deg);
+    -ms-transform: perspective(1000) rotateY(180deg);
+    -o-transform: perspective(1000) rotateY(180deg);
+    transform: perspective(1000) rotateY(180deg);
+}
+
+.flip-cards li:hover .card-back {
+    z-index: 950;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform: perspective(1000) rotateY(0deg);
+    -moz-transform: perspective(1000) rotateY(0deg);
+    -ms-transform: perspective(1000) rotateY(0deg);
+    -o-transform: perspective(1000) rotateY(0deg);
+    transform: perspective(1000) rotateY(0deg);
+}
+
+.flip-cards .card-front,
+.flip-cards .card-back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    transition: transform 0.6s;
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    border-color: white;
+}
+
+.flip-cards .card-front {
+    -webkit-transform: perspective(1000) rotateY(0);
+    -moz-transform: perspective(1000) rotateY(0);
+    -ms-transform: perspective(1000) rotateY(0);
+    -o-transform: perspective(1000) rotateY(0);
+    transform: perspective(1000) rotateY(0);
+    z-index: 900;
+}
+
+.flip-cards .card-back {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    z-index: 800;
+}
+
+/* Button Card Colors */
+
+.flip-cards .panel {
+    border: none;
+}
+
+.flip-cards .panel i,
+.flip-cards .panel p,
+.flip-cards .panel a,
+.flip-cards .panel small {
+    color: white;
+}
+
+/* First button color */
+
+.flip-cards li:first-child > .button {
+    background-color: rgba(40, 57, 77, 0.8);
+}
+
+.flip-cards li:first-child > .panel {
+    background-color: rgba(40, 57, 77, 1);
+}
+
+/* Second button color */
+
+.flip-cards li:nth-child(2) > .button {
+    background-color: rgba(109, 193, 202, 0.8);
+}
+
+.flip-cards li:nth-child(2) > .panel {
+    background-color: rgba(109, 193, 202, 1);
+}
+
+/* Third button color */
+
+.flip-cards li:nth-child(3) > .button {
+    background-color: rgba(211, 81, 45, 0.8);
+}
+
+.flip-cards li:nth-child(3) > .panel {
+    background-color: rgba(211, 81, 45, 1);
+}
+
+/*
+ * RESPONSIVENESS -------------------------------------------------
+ */
+
+@media only screen and ( max-width: 40em) {
+    .hero-unit {
+        height: 800px;
+    }
+    .flip-cards li {
+        width: 50%;
+        /*height: 160px;*/
+    }
+}
+
+@media only screen and ( max-width: 30em) {
+    .hero-unit h1 {
+        font-size: 1.75rem;
+    }
+    .hero-unit h3 {
+        font-size: 1.125rem;
+    }
+}
+
+@media only screen and ( max-width: 25em) {
+    .hero-unit {
+        height: 920px;
+    }
+    .hero-unit hgroup {
+        margin: 2rem 0;
+    }
+    .hero-unit h1 {
+        font-size: 1.35rem;
+        padding-bottom: 0.25rem;
+    }
+    .hero-unit h3 {
+        font-size: 0.85rem;
+    }
+    .hero-unit .card-icon {
+        font-size: 1.35rem;
+    }
+    .hero-unit .card-back .card-icon {
+        font-size: 2rem;
+        margin: 0;
+        padding: 5px 0 20px 5px;
+    }
+    .flip-cards li {
+        width: 100%;
+        font-size: 1.35rem;
+        height: 120px;
+    }
+    .flip-cards .panel p {
+        display: none;
+    }
+    .flip-cards .panel small {
+        margin: 0;
+    }
+    .button.large {
+        padding: 2rem;
+    }
+    .button.large a {
+        font-size: 1.35rem;
+    }
+}
+
+
+
+/*
+.clock {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    color: #f9f9f9;
+    position: absolute;
+    top: 242px;
+    left: 180px;
+    width: 162px;
+}
+
+.rings {
+    position: relative;
+    width: 500px;
+    margin: 100px auto;
+}
+
+.rings .h {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.rings .m {
+    position: absolute;
+    left: 85px;
+    top: 85px;
+}
+
+.rings .s {
+    position: absolute;
+    left: 163px;
+    top: 163px;
+}
+
+.demo {
+    background: #222;
+    height: 700px;
+    width: 80%;
+}
+
+.watch-input {
+    display: none;
+}
+
+.projects {
+    overflow: hidden;
+    position: relative;
+}
+
+
+.project-title {
+    font-family: "Dosis", sans-serif;
+    letter-spacing: 5px;
+    font-size: 40;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 90vh;
+    font-size: 25px;
+    font-weight: 400;
+
+    perspective: 600px;
+    transform: skew(-20deg);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.item {
+    width: 100%;
+    height: 90vh;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: currentColor;
+    transition: opacity .3s ease-in-out 0.3s, transform .3s ease-in-out, width .3s ease-in-out .3s;
+}
+
+.item .item-link {
+    text-decoration: none;
+    transform: skew(20deg);
+    transition: all .3s ease-in .3s;
+    color: white;
+}
+
+.item div {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    opacity: 0;
+    transition: all .3s ease-in 0s;
+}
+
+.item:last-child::after {
+    content: '';
+    width: 100vw;
+    background: currentColor;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(99%);
+}
+.item:first-child::before {
+    content: '';
+    width: 100vw;
+    background: currentColor;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-99%);
+}
+
+.A {
+    color: black;
+
+}
+
+.B {
+    color: red;
+}
+
+.C {
+    color: black;
+}
+
+.D {
+    color: #3498db;
+}
+
+.E {
+    color: #e67e22;
+}
+
+.projects-container:hover {
+    transform: skew(0);
+}
+
+.projects-container:hover .item-link {
+    transform: skew(0);
+    transition-delay: 0s;
+}
+
+.item:hover .item-link {
+    opacity: 0;
+}
+
+.item:hover div {
+    opacity: 1;
+    transition-delay: 0.6s;
+}
+
+.projects-container:hover > .item:not(:hover) {
+    width: 2%;
+}
+
+.projects-container:hover > .item:not(:hover) > .item-link,
+.projects-container:hover > .item:not(:hover) div {
+    opacity: 0;
+}
+
+.info {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: white;
+    padding: 1em;
+    margin: 1em;
+    background: rgba(0, 0, 0, 0.5)
+}
+*/
